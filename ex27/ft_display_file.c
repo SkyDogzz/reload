@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:40:00 by marvin            #+#    #+#             */
-/*   Updated: 2024/11/05 16:38:44 by marvin           ###   ########.fr       */
+/*   Updated: 2024/11/05 23:09:14 by skydogzz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	main(int argc, char *argv[])
 		return (EXIT_FAILURE);
 	}
 	fd = open(argv[1], O_RDONLY);
-	if (!fd)
+	if (fd == -1)
 	{
 		ft_putstr_err("Cannot read file.\n");
 		return (EXIT_FAILURE);
