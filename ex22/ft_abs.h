@@ -6,13 +6,13 @@
 /*   By: marvin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 10:40:05 by marvin            #+#    #+#             */
-/*   Updated: 2024/11/05 11:01:05 by marvin           ###   ########.fr       */
+/*   Updated: 2024/11/05 13:23:14 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ABS_C
-# define FT_ABS_C
+#ifndef FT_ABS_H
+# define FT_ABS_H
 
-# define ABS(value) ((value) >= (0) ? (value) : -(value))
+# define ABS(nbr) (nbr >= 0 ? nbr : -nbr)
 
 #endif

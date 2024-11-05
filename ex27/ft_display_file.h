@@ -1,36 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_foreach.c                                       :+:      :+:    :+:   */
+/*   ft_display_file.h                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/05 10:28:31 by marvin            #+#    #+#             */
-/*   Updated: 2024/11/05 12:37:54 by marvin           ###   ########.fr       */
+/*   Created: 2024/11/05 13:19:31 by marvin            #+#    #+#             */
+/*   Updated: 2024/11/05 13:34:00 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_foreach(int *tab, int length, void (*f)(int))
-{
-	int	pos;
+#ifndef FT_DISPLAY_FILE_H
+# define FT_DISPLAY_FILE_H
 
-	pos = 0;
-	while (pos < length)
-		f(tab[pos++]);
-}
+# include <unistd.h>
+# include <stdlib.h>
+# include <fcntl.h>
 
-// #include <stdio.h>
-// #include <stdlib.h>
-// 
-// void print_nbr(int nb)
-// {
-// 	printf("%d, ", nb);
-// }
-// 
-// int main(void)
-// {
-// 	int tab[] = {1, 2, 3, 4, 5};
-// 	ft_foreach(tab, 5, &print_nbr);
-// 
-// 	return EXIT_SUCCESS;
-// }
+size_t	ft_strlen(char *str);
+void	ft_putstr_err(char *str);
+void	display_file(int fd);
+
+#endif
