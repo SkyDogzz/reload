@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:40:00 by marvin            #+#    #+#             */
-/*   Updated: 2024/11/05 13:40:47 by marvin           ###   ########.fr       */
+/*   Updated: 2024/11/05 16:38:44 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ int	main(int argc, char *argv[])
 		return (EXIT_FAILURE);
 	}
 	display_file(fd);
+	close(fd);
 	return (EXIT_SUCCESS);
 }
 
