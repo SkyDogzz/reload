@@ -1,17 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   display_file.c                                     :+:      :+:    :+:   */
+/*   ft_display_file.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:40:00 by marvin            #+#    #+#             */
-/*   Updated: 2024/11/05 13:13:38 by marvin           ###   ########.fr       */
+/*   Updated: 2024/11/05 13:40:47 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_display_file.h"
-#include <stdio.h>
 
 int	main(int argc, char *argv[])
 {
@@ -33,7 +32,6 @@ int	main(int argc, char *argv[])
 		ft_putstr_err("Cannot read file.\n");
 		return (EXIT_FAILURE);
 	}
-	printf("Hello, %d\n", fd);
 	display_file(fd);
 	return (EXIT_SUCCESS);
 }

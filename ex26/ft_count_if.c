@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 10:40:47 by marvin            #+#    #+#             */
-/*   Updated: 2024/11/05 13:22:32 by marvin           ###   ########.fr       */
+/*   Updated: 2024/11/05 13:45:18 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@ int	ft_count_if(char **tab, int (*f)(char *))
 	int	nb;
 
 	nb = 0;
-	while (*tab++)
-		if (f(*tab))
+	while (*tab)
+		if (f(*tab++))
 			nb++;
 	return (nb);
 }
@@ -27,6 +27,7 @@ int	ft_count_if(char **tab, int (*f)(char *))
 // int test_f(char *tab)
 // {
 // 	(void) tab;
+// 	printf("Hello World %s\n", tab);
 // 	return (1);
 // }
 // 
